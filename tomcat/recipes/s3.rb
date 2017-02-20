@@ -1,4 +1,4 @@
-s3_file "/var/lib/tomcat7/webapps/BookMyDocv4.war" do
+s3_file "/var/lib/tomcat6/webapps/BookMyDocv4.war" do
   bucket "opsworkmohan"
   remote_path "BookMyDocv4.war"
   mode '0644'
