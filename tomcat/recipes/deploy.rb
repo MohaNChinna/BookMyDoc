@@ -12,7 +12,6 @@
 # and limitations under the License.
 
 include_recipe 'deploy'
-include_recipe 'tomcat::s3'
 
 node[:deploy].each do |application, deploy|
   opsworks_deploy_dir do
@@ -52,3 +51,4 @@ node[:deploy].each do |application, deploy|
   end
 end
 include_recipe 'tomcat::context'
+include_recipe 'tomcat::s3'
