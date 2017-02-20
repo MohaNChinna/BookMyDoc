@@ -12,6 +12,7 @@
 # and limitations under the License.
 
 include_recipe 'tomcat::service'
+include_recipe 'tomcat::s3'
 
 node[:deploy].each do |application, deploy|
   context_name = deploy[:document_root].blank? ? application : deploy[:document_root]
